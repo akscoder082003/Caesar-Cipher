@@ -10,11 +10,11 @@ def caesar_decrypt(ciphertext, shift):
     return plaintext
 
 # Get user input
-ciphertext = input("Enter the ciphertext: ")
+ciphertext = input("Enter the Plaintext: ")
 shift = int(input("Enter the shift value: "))
 
 # Call the decryption function
 plaintext = caesar_decrypt(ciphertext, shift)
 
 # Display the decrypted plaintext
-print("Decrypted plaintext:", plaintext)
+print("Incrypted plaintext:", plaintext)

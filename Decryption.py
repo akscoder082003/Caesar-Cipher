@@ -11,7 +11,7 @@ def caesar_decrypt(ciphertext, shift):
 
 
 # Get user input
-ciphertext = input("Enter the ciphertext: ")
+ciphertext = input("Enter the Incrypted Text: ")
 shift = int(input("Enter the shift value: "))
 
 # Call the decryption function

@@ -1,7 +1,7 @@
 # Caesar-Cipher
 
 
-The Caesar cipher is a simple encryption technique that was used by Julius Caesar to send secret messages to his allies. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. 
+The Caesar cipher also known as _shift cipher_ is a simple encryption technique that was used by Julius Caesar to send secret messages to his allies. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. 
 
 ### Diagram: 
 

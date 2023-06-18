@@ -12,6 +12,12 @@ Shift: 3
 Ciphertext: KLOR
 
 
-Diagram: 
+# Diagram: 
 
 ![image](https://github.com/akscoder082003/Caesar-Cipher/assets/109755100/ee7b7b5e-ee16-46ef-8ffa-5167801bbca5)
+
+
+
+# Difference between Encryption and Decryption :
+
+Encryption is the process of converting normal message(plaintext) into meaningless message(ciphertext). Whereas Decryption is the process of converting meaningless message(ciphertext) into its original form or plaintext.

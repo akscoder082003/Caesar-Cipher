@@ -15,4 +15,4 @@ Encryption is the process of converting normal message(plaintext) into meaningle
 
 ### Demo :
 
-![Output](image.png)
+![Alt text](image.png)

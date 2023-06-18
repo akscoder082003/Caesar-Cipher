@@ -15,6 +15,7 @@ def encrypt(plaintext, shift):
         if(char.isupper()):
 # Add the encrypted version of the character to the ciphertext.
             ciphertext += chr((ord(char) + shift-65) %26 + 65)
+# Check if the character is lowercase.
         else:
 # Add the encrypted version of the character to the ciphertext.
             ciphertext += chr((ord(char) + shift-97) %26 + 97)

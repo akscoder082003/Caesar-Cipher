@@ -1,20 +1,28 @@
-def caesar_decrypt(ciphertext, shift):
-    plaintext = ""
-    for char in ciphertext:
-        if char.isalpha():
-            ascii_offset = ord('A') if char.isupper() else ord('a')
-            decrypted_char = chr((ord(char) - ascii_offset + shift) % 26 + ascii_offset)
-            plaintext += decrypted_char
+# This function encrypts a message using a Caesar cipher.
+def encrypt(plaintext, shift):
+
+# Args:
+#     plaintext (str): The message to be encrypted.
+#     shift (int): The number of letters to shift in the plaintext by.
+# Returns:
+#     The encrypted message.
+
+# Create an empty string to store the encrypted message.
+    ciphertext = ""
+# Iterate over each character in the plaintext.
+    for char in plaintext:
+# Check if the character in uppercase.
+        if(char.isupper()):
+# Add the encrypted version of the character to the ciphertext.
+            ciphertext += chr((ord(char) + shift-65) %26 + 65)
         else:
-            plaintext += char
-    return plaintext
-
-# Get user input
-ciphertext = input("Enter the Plaintext: ")
-shift = int(input("Enter the shift value: "))
-
-# Call the decryption function
-plaintext = caesar_decrypt(ciphertext, shift)
-
-# Display the decrypted plaintext
-print("Incrypted plaintext:", plaintext)
+# Add the encrypted version of the character to the ciphertext.
+            ciphertext += chr((ord(char) + shift-97) %26 + 97)
+# Return the encrypted message.
+    return ciphertext
+# Get the plaintext from the user.
+plaintext = input("Enter the Plaintext: ")
+# Get the shift value from the user.
+shift = int(input("Enter the Shift value: "))
+# Encrypt the plaintexr and print the ciphertext.
+print("Ciphertext : ", encrypt(plaintext, shift))

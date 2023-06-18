@@ -21,9 +21,14 @@ def encrypt(plaintext, shift):
             ciphertext += chr((ord(char) + shift-97) %26 + 97)
 # Return the encrypted message.
     return ciphertext
-# Get the plaintext from the user.
-plaintext = input("Enter the Plaintext: ")
-# Get the shift value from the user.
-shift = int(input("Enter the Shift value: "))
-# Encrypt the plaintexr and print the ciphertext.
-print("Ciphertext : ", encrypt(plaintext, shift))
+
+def main():
+    # Get the plaintext from the user.
+    plaintext = input("Enter the Plaintext: ")
+    # Get the shift value from the user.
+    shift = int(input("Enter the Shift value: "))
+    # Encrypt the plaintexr and print the ciphertext.
+    print("Ciphertext : ", encrypt(plaintext, shift))
+    
+if __name__ == "__main__":
+    main()

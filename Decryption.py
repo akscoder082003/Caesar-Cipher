@@ -20,9 +20,14 @@ def decrypt(ciphertext, shift):
             plaintext += chr((ord(char) - shift-97) %26 + 97)
 # Return the plaintext.
     return plaintext
-# Get the ciphertext from the user.
-ciphertext = input("Enter the Ciphertext: ")
-# Get the shift value from the user.
-shift = int(input("Enter the Shift value: "))
-# Decrypt the ciphertext and print the plaintext.
-print("Plaintext : ", decrypt(ciphertext, shift))
+
+def main():
+    # Get the ciphertext from the user.
+    ciphertext = input("Enter the Ciphertext: ")
+    # Get the shift value from the user.
+    shift = int(input("Enter the Shift value: "))
+    # Decrypt the ciphertext and print the plaintext.
+    print("Plaintext : ", decrypt(ciphertext, shift))
+    
+if __name__ == "__main__":
+    main()

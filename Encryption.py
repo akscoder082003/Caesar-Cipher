@@ -1,12 +1,12 @@
-# This function encrypts a message using a Caesar cipher.
+"""
+This function encrypts a message using a Caesar cipher.
+Args:
+    plaintext (str): The message to be encrypted.
+    shift (int): The number of letters to shift in the plaintext by.
+Returns:
+    The encrypted message.
+"""
 def encrypt(plaintext, shift):
-
-# Args:
-#     plaintext (str): The message to be encrypted.
-#     shift (int): The number of letters to shift in the plaintext by.
-# Returns:
-#     The encrypted message.
-
 # Create an empty string to store the encrypted message.
     ciphertext = ""
 # Iterate over each character in the plaintext.

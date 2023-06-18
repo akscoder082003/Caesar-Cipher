@@ -18,6 +18,6 @@ Ciphertext: KLOR
 
 
 
-# Difference between Encryption and Decryption :
+Basic difference between Encryption and Decryption :
 
 Encryption is the process of converting normal message(plaintext) into meaningless message(ciphertext). Whereas Decryption is the process of converting meaningless message(ciphertext) into its original form or plaintext.
